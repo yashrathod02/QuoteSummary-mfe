@@ -1,0 +1,96 @@
+<!-- <div class="container">
+  <div>
+    <table class="table">
+      hii
+        <tr>{{foundcreateDate}}</tr>
+        <tr>{{foundquoteName}}</tr>
+        <tr>{{foundstatus}}</tr>
+        <tr>{{foundcompanyName}}</tr>
+        <tr>{{foundcustomerNumber}}</tr>
+        <tr>{{foundrevenue}}</tr>
+        <tr>{{hostQuote}}</tr>
+        <tr>{{index}}</tr>
+    </table>
+</div>
+</div> -->
+
+<div class="row">
+  <div class="col-md-2" >
+    <mat-accordion displayMode="flat" class="mat-table">
+      <section matSort class="mat-header-row" >
+        <span class="mat-header-cell" >Create Date</span>
+        <span class="mat-header-cell" >Quote Name</span>
+        <span class="mat-header-cell" >Quote Number</span>
+        <span class="mat-header-cell" >Status</span>
+        <span class="mat-header-cell" >Company Name</span>
+        <span class="mat-header-cell" >Customer Number</span>
+        <span class="mat-header-cell" >Revenue</span>
+      </section>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="mat-row">
+          <span class="mat-cell">{{foundcreateDate}}</span>
+          <span class="mat-cell">{{foundquoteName}}</span>
+          <span class="mat-cell" style="color: rgb(37, 115, 218);">{{foundquoteNumber}}.{{foundquoteVersionNumber}}</span>
+          <span class="mat-cell" >{{foundstatus}}</span>
+          <span class="mat-cell">{{foundcompanyName}}</span>
+          <span class="mat-cell">{{foundcustomerNumber}}</span>
+          <span class="mat-cell">{{foundrevenue}}</span>
+        </mat-expansion-panel-header>
+        <mat-panel-description class="mat-des">
+            <!-- <span class="mat-cell" ><strong>Item Description: </strong><br>{{founditemDescription}}</span>
+            <span class="mat-cell" ><strong>Quantity: </strong>{{foundquantity}}<br></span>
+            <span class="mat-cell" ><strong>Shipping Address:  </strong>{{foundshippingAddress}}</span>
+            <span class="mat-cell" ><strong>Quote Expiry: </strong>{{foundquoteExpiry}}</span> -->
+            <!-- <mat-grid-list cols="4" rowHeight="20px" class="mat-cell" style="text-align: left;" >
+              <mat-grid-tile [colspan]="3"><strong>Item Description: &emsp;</strong>{{founditemDescription}}</mat-grid-tile>
+              <mat-grid-tile [colspan]="1"><strong>Quantity: </strong>{{foundquantity}}</mat-grid-tile>
+              <mat-grid-tile [colspan]="3"><strong>Shipping Address:  </strong>{{foundshippingAddress}}</mat-grid-tile>
+              <mat-grid-tile [colspan]="1"><strong>Quote Expiry: </strong>{{foundquoteExpiry}}</mat-grid-tile>
+            </mat-grid-list> -->
+             <ul style="float:left;" class="mat-llis">
+              <mat-list>
+                <mat-list-item>
+                  <ul style="list-style-type:none; padding: 0;">
+                  <li><strong>Item Description:</strong></li>
+                  <li>{{founditemDescription}}</li>
+                  </ul>
+                </mat-list-item>
+                <mat-list-item>
+                  <ul style="list-style-type:none; padding: 0;">
+                    <li><strong>Shipping Address:</strong></li>
+                    <li>{{foundshippingAddress}}</li>
+                    <li style="color: rgb(37, 115, 218);">{{foundemailId}}</li>
+                  </ul>
+                </mat-list-item>
+               </mat-list>
+           </ul>
+           <ul style="float:left;" class="mat-rlis">
+            <mat-list>
+              <mat-list-item >
+                <ul style="list-style-type:none; padding: 0;">
+                  <li><strong>Quantity:</strong></li>
+                  <li>{{foundquantity}}</li>
+                </ul> 
+              </mat-list-item>
+              <mat-list-item>
+                <ul style="list-style-type:none; padding: 0;">
+                  <li><strong>Quote Expiry:</strong></li>
+                  <li>{{foundquoteExpiry}}</li>
+                </ul>
+              </mat-list-item>
+             </mat-list>
+           </ul>
+           <ul style="float: left" class="mat-blis">
+             <mat-list-item> <button class="button">Copy as New Quote</button></mat-list-item>
+             <mat-list-item> <button class="button">Copy as New Version</button></mat-list-item>
+            </ul>
+          </mat-panel-description>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+
+
+            
+  
+  

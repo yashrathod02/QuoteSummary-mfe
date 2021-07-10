@@ -1,0 +1,122 @@
+.mat-accordion .mat-header-row {
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  border-bottom: none;
+}
+
+.mat-expansion-panel-header.mat-row {
+  border-bottom: none;
+}
+/* mat-header-row-height 56px;
+$mat-row-height: 48px;
+$mat-row-horizontal-padding: 24px; */
+
+.mat-table {
+  display: block;
+}
+
+.mat-header-row {
+  min-height: 56px;
+}
+
+.mat-row {
+  min-height: 48px;
+}
+
+.mat-row, .mat-header-row {
+  display: flex;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  align-items: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  /* // Workaround for https://goo.gl/pFmjJD in IE 11. Adds a pseudo
+  // element that will stretch the row the correct height. See:*/
+  
+}
+
+.mat-header-cell {
+  flex: 1;
+  overflow: hidden;
+  word-wrap: break-word;
+  color: #3283e0;
+  font-size: 20px;
+}
+
+.mat-cell{
+  flex: 1;
+  overflow: hidden;
+  word-wrap: break-word;
+  color: black;
+
+}
+
+.mat-grid{
+  overflow: hidden;
+  flex: 10px;
+}
+.my-grid-tile {
+  padding-top: 2px !important;
+}
+
+
+
+
+div {
+  margin: 1em;
+}
+
+
+  .mat-header-cell {
+    flex: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: #3283e0;
+    font-size: 20px;
+  }
+
+  .mat-cell, .mat-header-cell {
+    flex: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .mat-llis{
+    padding-top: 0;
+    padding-left: 145px;
+    padding-bottom: 0;
+  }
+  .mat-rlis{
+    padding-top: 0;
+    padding-left: 420px;
+    padding-bottom: 0;
+
+  }
+
+  .mat-des{
+    padding-top: 0px;
+  }
+  .mat-blis{
+    padding-left: 210px;
+  }
+  .button {
+
+    background-color: white;
+    border: none;
+    color: rgb(80, 142, 223);
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px;
+    margin: 4px 2px; */
+    cursor: pointer;
+    border: 3px solid rgb(37, 115, 218);
+    width: 200px;
+    height: 50px;
+  }
+  .corners {
+    border: 2px solid red;
+    border-radius: 12px;
+  }
